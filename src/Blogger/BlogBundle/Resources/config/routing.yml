@@ -1,1 +1,18 @@
+BloggerBlogBundle_home:
+    pattern:  /
+    defaults: { _controller: BloggerBlogBundle:Test:action1 }
+    requirements:
+        _method:  GET
 
+
+BloggerBlogBundle_action1:
+    pattern:  /action1
+    defaults: { _controller: BloggerBlogBundle:Test:action1 }
+    requirements:
+        _method:  GET
+
+BloggerBlogBundle_homepage:
+    pattern:  /
+    defaults: { _controller: BloggerBlogBundle:Page:index }
+    requirements:
+        _method:  GET
